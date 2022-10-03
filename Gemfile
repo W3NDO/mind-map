@@ -75,3 +75,7 @@ group :test do
 end
 
 gem "rspec-rails", "~> 5.1"
+
+gem "hotwire-rails", "~> 0.1.3"
+
+gem "devise", "~> 4.8"
