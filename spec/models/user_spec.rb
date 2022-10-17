@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   let(:user) {User.new(email: "test@email.com", password: "foobar123", password_confirmation: "foobar123")}
-  let(:valid_email_regex) { /^[a-zA-Z0-9\+]+(?:\.[a-zA-Z0-9\+]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/}
+  let(:valid_email_regex) { /^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/}
 
   it "creates a new valid user" do
     expect(user.valid?).to be true
